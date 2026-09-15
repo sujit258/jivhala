@@ -85,7 +85,7 @@ self.addEventListener('push', (event) => {
 
   const options = {
     body: data.body || 'छोट्या छोट्या गोष्टींची काळजी.',
-    icon: data.icon || '/icons/icon-192.svg',
+    icon: data.icon || '/icons/icon-192.png',
     badge: '/icons/notification-badge.svg',
     tag: data.tag || `jivhala-reminder-${data.category || 'care'}`,
     renotify: true,

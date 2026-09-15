@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useApp } from '@/context/AppContext';
 import { AvatarGraphic } from '@/components/avatars/AvatarGraphic';
@@ -80,9 +81,17 @@ export default function HomeScreen() {
       <div className="relative pt-8 pb-6 px-6 bg-gradient-to-b from-[#FFF0E6] via-[#FFF5EE] to-[#FFF9F5] dark:from-[#2B201D] dark:via-[#211A18] dark:to-[#1B1716] border-b border-[#F3E5DC]/60 dark:border-[#38312F]/60">
         <div className="flex items-center justify-between">
           <div>
-            <div className="flex items-center gap-1.5 text-xs font-semibold text-[#817775] dark:text-[#A89D9A] mb-1">
-              <GreetingIcon className={`w-4 h-4 ${greeting.iconColor}`} />
-              <span>{greeting.text}</span>
+            <div className="flex items-center gap-2 mb-1.5">
+              <Link href="/about" className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-white/80 dark:bg-[#2A201E] border border-[#F8D8CC] dark:border-[#423330] shadow-2xs hover:scale-105 transition-transform" title="About Jivhala">
+                <div className="w-4 h-4 rounded-full overflow-hidden shrink-0">
+                  <Image src="/logo.webp" alt="Jivhala" width={16} height={16} className="w-full h-full object-cover" />
+                </div>
+                <span className="text-[10px] font-bold text-[#292525] dark:text-[#F7EFEA] tracking-wider">JIVHALA</span>
+              </Link>
+              <div className="flex items-center gap-1 text-xs font-semibold text-[#817775] dark:text-[#A89D9A]">
+                <GreetingIcon className={`w-3.5 h-3.5 ${greeting.iconColor}`} />
+                <span>{greeting.text}</span>
+              </div>
             </div>
             <h1 className="text-2xl sm:text-3xl font-bold text-[#292525] dark:text-[#F7EFEA] tracking-tight font-serif flex items-center gap-1">
               {greeting.text}, {name || 'सखी'} <span className="text-[#E97878] text-xl">❤️</span>

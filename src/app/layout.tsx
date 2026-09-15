@@ -26,8 +26,11 @@ export const metadata: Metadata = {
     title: 'Jivhala'
   },
   icons: {
-    icon: '/icons/icon-192.svg',
-    apple: '/icons/icon-192.svg'
+    icon: [
+      { url: '/favicon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' }
+    ],
+    apple: '/apple-touch-icon.png'
   }
 };
 
@@ -48,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="mr" className={`${jakarta.variable} ${devanagari.variable} h-full antialiased`}>
       <head>
-        <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className="min-h-full flex flex-col bg-[#FFF9F5] dark:bg-[#1B1716] text-[#292525] dark:text-[#F5EFEB]">
         <AppProvider>

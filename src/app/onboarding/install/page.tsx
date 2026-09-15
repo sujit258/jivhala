@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useApp } from '@/context/AppContext';
 import { usePWAInstall } from '@/hooks/usePWAInstall';
 import { CheckCircle2, Share2, PlusSquare, Smartphone, ArrowLeft, Download } from 'lucide-react';
@@ -89,8 +90,14 @@ export default function InstallPWAScreen() {
       <div className="flex flex-col items-center my-auto py-4 z-10">
         {/* Visual Phone Card */}
         <div className="relative w-44 h-44 rounded-3xl bg-gradient-to-b from-[#FFF0E6] to-[#FCE2D6] dark:from-[#342724] dark:to-[#221B1A] border border-[#F8D8CC] dark:border-[#4B3733] shadow-lg shadow-[#E97878]/10 flex flex-col items-center justify-center p-4 mb-5">
-          <div className="w-16 h-16 rounded-2xl bg-white dark:bg-[#2A211F] p-2 flex items-center justify-center shadow-md mb-2">
-            <span className="text-3xl">❤️</span>
+          <div className="w-16 h-16 rounded-2xl bg-white dark:bg-[#2A211F] p-1 flex items-center justify-center shadow-md mb-2 overflow-hidden border border-[#F8D8CC] dark:border-[#4B3733]">
+            <Image
+              src="/icons/icon-192.png"
+              alt="Jivhala App Icon"
+              width={60}
+              height={60}
+              className="w-full h-full object-cover rounded-xl"
+            />
           </div>
           <span className="text-xs font-bold text-[#292525] dark:text-[#F7EFEA]">Jivhala</span>
           <span className="text-[10px] text-[#817775] dark:text-[#A89D9A]">Install App</span>

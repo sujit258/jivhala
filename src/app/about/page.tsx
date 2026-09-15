@@ -2,13 +2,10 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Heart } from 'lucide-react';
-import { AvatarGraphic } from '@/components/avatars/AvatarGraphic';
-import { useApp } from '@/context/AppContext';
 
 export default function AboutPage() {
-  const { avatarId } = useApp();
-
   return (
     <div className="flex flex-col min-h-screen bg-[#FFF9F5] dark:bg-[#1B1716] px-6 py-8">
       <div className="flex items-center mb-6">
@@ -24,8 +21,14 @@ export default function AboutPage() {
       </div>
 
       <div className="flex flex-col items-center text-center my-auto py-6">
-        <div className="w-24 h-24 rounded-full bg-[#FFF2EA] dark:bg-[#342623] p-1 border-2 border-[#F8D8CC] dark:border-[#4B3733] shadow-lg shadow-[#E97878]/15 flex items-center justify-center overflow-hidden mb-4">
-          <AvatarGraphic avatarId={avatarId} expression="caring" viewMode="card" />
+        <div className="w-36 h-36 rounded-full bg-white dark:bg-[#27201E] p-1 border-2 border-[#F8D8CC] dark:border-[#4B3733] shadow-xl shadow-[#E97878]/20 flex items-center justify-center overflow-hidden mb-5">
+          <Image
+            src="/logo.webp"
+            alt="Jivhala Logo Emblem"
+            width={144}
+            height={144}
+            className="w-full h-full object-contain rounded-full select-none"
+          />
         </div>
 
         <h2 className="text-2xl font-bold text-[#292525] dark:text-[#F7EFEA] font-serif flex items-center gap-1.5">
