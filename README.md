@@ -142,8 +142,8 @@ The scheduler:
    - `NEXT_PUBLIC_VAPID_PUBLIC_KEY`: The public VAPID key.
    - `VAPID_PRIVATE_KEY`: The private VAPID key.
    - `VAPID_SUBJECT`: `mailto:your-email@domain.com`.
-   - `CRON_SECRET`: A secure random secret string.
-4. Vercel Cron automatically invokes `/api/notifications/process` every minute per `vercel.json`.
+   - `CRON_SECRET`: A secure random secret string (shared with the Cloudflare Worker scheduler).
+4. Set up the Cloudflare Worker Cron Trigger per [`cloudflare-worker/README.md`](./cloudflare-worker/README.md) to trigger `/api/notifications/process` every minute (* * * * *) on Cloudflare's free tier.
 
 ---
 
