@@ -27,7 +27,7 @@ graph LR
 
 | Variable Name | Type | Description | Example |
 | :--- | :--- | :--- | :--- |
-| `JIVHALA_APP_URL` | Environment Variable or Secret | Your live Jivhala Vercel domain | `https://jivhala-sujitjoshi258-gmailcoms-projects.vercel.app` |
+| `JIVHALA_APP_URL` | Environment Variable or Secret | Your live Jivhala production domain | `https://jivhala.suvidhatools.in` |
 | `CRON_SECRET` | **Encrypted Secret** | Same secret set in Vercel Project Settings | `jivhala_sec_...` |
 
 ---
@@ -55,7 +55,7 @@ You can set this up using either **Option A (Web Dashboard - No CLI)** or **Opti
    - Go to the **Settings** tab → **Variables and Secrets**.
    - Under **Variables and Secrets**, click **Add**:
      - Name: `JIVHALA_APP_URL`
-     - Value: `https://<your-vercel-domain>.vercel.app` (your actual Vercel deployment URL)
+     - Value: `https://jivhala.suvidhatools.in` (your actual production domain)
      - Type: Variable (or Encrypt)
      - Click **Save**.
    - Click **Add** again:

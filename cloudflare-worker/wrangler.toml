@@ -8,7 +8,7 @@ crons = ["* * * * *"]
 
 # Non-sensitive environment variables
 [vars]
-JIVHALA_APP_URL = "https://jivhala.vercel.app"
+JIVHALA_APP_URL = "https://jivhala.suvidhatools.in"
 
 # Secrets to configure via dashboard or `wrangler secret put`:
 # - CRON_SECRET: Secret matching process.env.CRON_SECRET on Vercel
