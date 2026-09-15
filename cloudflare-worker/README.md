@@ -63,20 +63,20 @@ You can set this up using either **Option A (Web Dashboard - No CLI)** or **Opti
      - Value: `<your_cron_secret>` (must exactly match `CRON_SECRET` in your Vercel Project Settings)
      - Click **Encrypt** (marks as secret)
      - Click **Save**.
-7. **Test the Worker**:
+6. **Verify the Worker**:
    - In your browser, open: `https://jivhala-cron-worker.<your-subdomain>.workers.dev/health`
-   - It will return:
+   - It will return safe status without exposing any URLs or credentials:
      ```json
      {
        "status": "ok",
        "service": "jivhala-cron-scheduler",
        "schedule": "* * * * *",
        "targetConfigured": true,
-       "secretConfigured": true,
-       "targetUrl": "https://..."
+       "secretConfigured": true
      }
      ```
-   - To trigger an immediate test notification cycle: open `https://jivhala-cron-worker.<your-subdomain>.workers.dev/trigger` in your browser.
+   - **Production Security**: The `/trigger` HTTP endpoint is completely disabled (returns `404 Not Found`) in production so unauthorized parties cannot trigger notification runs. In development, manual triggers require a separate `DEV_MANUAL_TRIGGER_SECRET`.
+   - **Live Log Verification**: Go to **Live Logs** (or **Real-time Logs**) in the Cloudflare dashboard and click **Begin log stream**. Every 60 seconds you will see the worker successfully execute the scheduled cron.
 
 ---
 

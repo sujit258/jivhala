@@ -1,7 +1,7 @@
 export interface Env {
   /**
    * Base URL of the deployed Jivhala Next.js application on Vercel
-   * Example: "https://jivhala-sujitjoshi258-gmailcoms-projects.vercel.app" or custom domain
+   * Example: "https://jivhala-sujitjoshi258-gmailcoms-projects.vercel.app"
    */
   JIVHALA_APP_URL: string;
 
@@ -9,12 +9,24 @@ export interface Env {
    * Secret token matching process.env.CRON_SECRET in Vercel
    */
   CRON_SECRET: string;
+
+  /**
+   * Environment mode: 'production' | 'development'
+   * Defaults to 'production' if not explicitly set
+   */
+  ENVIRONMENT?: string;
+
+  /**
+   * Optional separate development-only secret for manual triggering.
+   * If unset or if ENVIRONMENT is 'production', manual triggering is completely disabled (404).
+   */
+  DEV_MANUAL_TRIGGER_SECRET?: string;
 }
 
-export default {
+const worker = {
   /**
    * Cloudflare Cron Trigger handler
-   * Invoked automatically every minute (* * * * *)
+   * Invoked automatically every minute (* * * * *) by Cloudflare Cron Triggers
    */
   async scheduled(event: ScheduledEvent, env: Env, ctx: ExecutionContext): Promise<void> {
     ctx.waitUntil(triggerScheduler(env, `cron:${event.cron}`));
@@ -22,12 +34,13 @@ export default {
 
   /**
    * HTTP Fetch handler
-   * Useful for manual triggers, health checks, and dashboard testing
+   * Handles safe health check and strictly protected development-only triggers
    */
-  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+  async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url);
 
-    // Health check endpoint: GET /health or GET /
+    // Safe Health Check: GET /health or GET /
+    // Never exposes secrets, tokens, or internal URLs
     if (url.pathname === '/' || url.pathname === '/health') {
       return new Response(
         JSON.stringify(
@@ -36,8 +49,7 @@ export default {
             service: 'jivhala-cron-scheduler',
             schedule: '* * * * *',
             targetConfigured: Boolean(env.JIVHALA_APP_URL),
-            secretConfigured: Boolean(env.CRON_SECRET),
-            targetUrl: env.JIVHALA_APP_URL || '(not configured)'
+            secretConfigured: Boolean(env.CRON_SECRET)
           },
           null,
           2
@@ -45,21 +57,38 @@ export default {
         {
           headers: {
             'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': '*'
+            'Cache-Control': 'no-store'
           }
         }
       );
     }
 
-    // Manual test trigger endpoint: GET or POST /trigger
+    // Manual trigger endpoint:
+    // 1. Completely disabled (returns 404) in production or if DEV_MANUAL_TRIGGER_SECRET is unset.
+    // 2. In development, strictly requires DEV_MANUAL_TRIGGER_SECRET via Bearer token or ?secret= parameter.
     if (url.pathname === '/trigger') {
-      const result = await triggerScheduler(env, 'manual-http');
+      const isProduction = !env.ENVIRONMENT || env.ENVIRONMENT === 'production';
+      const devSecret = env.DEV_MANUAL_TRIGGER_SECRET;
+
+      if (isProduction || !devSecret) {
+        return new Response('Not Found', { status: 404 });
+      }
+
+      const authHeader = request.headers.get('authorization');
+      const bearer = authHeader?.startsWith('Bearer ') ? authHeader.substring(7) : authHeader;
+      const querySecret = url.searchParams.get('secret');
+
+      if (bearer !== devSecret && querySecret !== devSecret) {
+        return new Response(JSON.stringify({ error: 'Unauthorized' }), {
+          status: 401,
+          headers: { 'Content-Type': 'application/json' }
+        });
+      }
+
+      const result = await triggerScheduler(env, 'manual-dev-http');
       return new Response(JSON.stringify(result, null, 2), {
         status: result.success ? 200 : 502,
-        headers: {
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*'
-        }
+        headers: { 'Content-Type': 'application/json' }
       });
     }
 
@@ -67,30 +96,31 @@ export default {
   }
 };
 
+export default worker;
+
 /**
  * Dispatches notification processing request to the Jivhala Next.js app on Vercel
+ * Never logs or returns secret tokens.
  */
 async function triggerScheduler(env: Env, triggerSource: string) {
   const appUrl = (env.JIVHALA_APP_URL || '').trim().replace(/\/+$/, '');
   const secret = (env.CRON_SECRET || '').trim();
 
   if (!appUrl) {
-    const err = '[Cloudflare Worker Error] JIVHALA_APP_URL is not configured in Worker environment.';
-    console.error(err);
-    return { success: false, error: err };
+    console.error('[Cloudflare Worker Error] JIVHALA_APP_URL is not configured in Worker environment.');
+    return { success: false, error: 'Target URL is not configured' };
   }
 
   if (!secret) {
-    const err = '[Cloudflare Worker Error] CRON_SECRET is not configured in Worker secrets.';
-    console.error(err);
-    return { success: false, error: err };
+    console.error('[Cloudflare Worker Error] CRON_SECRET is not configured in Worker secrets.');
+    return { success: false, error: 'CRON_SECRET is not configured' };
   }
 
   const targetEndpoint = `${appUrl}/api/notifications/process`;
   const startTime = Date.now();
 
   try {
-    console.log(`[${new Date().toISOString()}] Dispatching cron (${triggerSource}) to ${targetEndpoint}...`);
+    console.log(`[${new Date().toISOString()}] Dispatching cron (${triggerSource})...`);
 
     const response = await fetch(targetEndpoint, {
       method: 'POST',
@@ -112,10 +142,7 @@ async function triggerScheduler(env: Env, triggerSource: string) {
     }
 
     if (response.ok) {
-      console.log(
-        `[Success] Jivhala scheduler returned HTTP ${response.status} in ${elapsedMs}ms:`,
-        JSON.stringify(responseData)
-      );
+      console.log(`[Success] Scheduler returned HTTP ${response.status} in ${elapsedMs}ms`);
       return {
         success: true,
         status: response.status,
@@ -123,10 +150,7 @@ async function triggerScheduler(env: Env, triggerSource: string) {
         data: responseData
       };
     } else {
-      console.error(
-        `[Error] Jivhala scheduler returned HTTP ${response.status} in ${elapsedMs}ms:`,
-        JSON.stringify(responseData)
-      );
+      console.error(`[Error] Scheduler returned HTTP ${response.status} in ${elapsedMs}ms`);
       return {
         success: false,
         status: response.status,
@@ -136,8 +160,8 @@ async function triggerScheduler(env: Env, triggerSource: string) {
     }
   } catch (error: unknown) {
     const elapsedMs = Date.now() - startTime;
-    const message = error instanceof Error ? error.message : 'Unknown network failure';
-    console.error(`[Fatal] Network exception invoking ${targetEndpoint} after ${elapsedMs}ms:`, message);
+    const message = error instanceof Error ? error.message : 'Network failure';
+    console.error(`[Fatal] Network exception after ${elapsedMs}ms:`, message);
     return {
       success: false,
       elapsedMs,
