@@ -1,0 +1,164 @@
+{
+  "app_name": "Jivhala ❤️",
+  "tagline": "Chhoti chhoti baaton ki care.",
+  "subtagline": "Someone who remembers the little things.",
+  "continue": "Continue →",
+  "next": "Aage badhein →",
+  "save": "Save ❤️",
+  "cancel": "Cancel",
+  "later": "Baad mein",
+  "maybe_later": "Baad mein kabhi",
+  "free_reassurance": "Free to use • No account required",
+
+  "splash": {
+    "loading": "Loading...",
+    "tagline": "Chhoti chhoti baaton ki care."
+  },
+
+  "welcome": {
+    "title": "Aapka Welcome hai! ❤️",
+    "subtitle": "Aapke liye koi chhoti-chhoti baatein yaad rakhe.",
+    "english_tag": "Someone who remembers the little things.",
+    "cta": "Shuruwat karein →"
+  },
+
+  "language": {
+    "title": "Apni language choose karein",
+    "subtitle": "Aapse aapki pasandida language me baat karna accha lagega!"
+  },
+
+  "avatar": {
+    "title": "Aapka companion kaun ho?",
+    "subtitle": "Aapko kis personality ka saath pasand hai?"
+  },
+
+  "name_step": {
+    "title": "Aapko kya keh kar bulayein?",
+    "placeholder": "Apna naam likhiye (e.g. Sujeet)",
+    "greeting": "Superb, {name}! ❤️",
+    "reassurance": "Ab main aapko time to time pyaar se yaad dilaunga."
+  },
+
+  "messages_step": {
+    "title": "Aapke liye caring reminders ❤️",
+    "subtitle": "Humne kuch zaroori reminders pehle se on rakhe hain. Aap jab chahein change kar sakte hain.",
+    "reassurance": "Sabhi reminders default me on hain."
+  },
+
+  "notifications_step": {
+    "title": "Kya main aapko yaad dilaun? ❤️",
+    "subtitle": "Khaana, paani, aaram aur self-care ke liye.",
+    "f1_title": "Time pe reminder",
+    "f1_desc": "Din bhar paani aur lunch ka timely alert",
+    "f2_title": "Aapki health aur din ki care",
+    "f2_desc": "Bina thake acche se kaam karne ke liye breaks",
+    "f3_title": "Sweet & gentle messages",
+    "f3_desc": "No pressure, bas ek apnaapan",
+    "cta": "Haan, yaad dilao ❤️",
+    "denied_help": "Aapne notifications block kiye hain. Browser settings me jakar allow karein."
+  },
+
+  "install_step": {
+    "title": "Jivhala phone me rakhein ❤️",
+    "subtitle": "Caring messages time pe milenge.",
+    "tab_android": "Android",
+    "tab_ios": "iPhone",
+    "step1": "Install App dabayein",
+    "step2": "Jivhala ko phone par add karein",
+    "step3": "Turant use karna shuru karein!",
+    "ios_step1": "Safari me niche Share button tap karein",
+    "ios_step2": "'Add to Home Screen' select karein",
+    "ios_step3": "Home Screen se Jivhala open karein",
+    "cta": "Install App",
+    "installed_success": "Jivhala pehle se installed hai! ❤️"
+  },
+
+  "home": {
+    "morning": "Good Morning",
+    "afternoon": "Good Afternoon",
+    "evening": "Good Evening",
+    "night": "Good Night",
+    "day_wish": "Aaj ka din bohot badhiya rahe. ❤️",
+    "next_card_label": "Next Caring Reminder",
+    "timeline_label": "Aaj ke baaki messages",
+    "add_reminder": "+ Add reminder",
+    "test_push_button": "📱 Test Push Notification",
+    "install_banner_title": "Jivhala phone me rakhein ❤️",
+    "install_banner_desc": "Caring messages time par aayenge."
+  },
+
+  "companion": {
+    "title": "Hi {name}! ❤️",
+    "question": "Aaj kaisa feel kar rahe ho?",
+    "chip_great": "😊 Bohot accha",
+    "chip_tough": "😔 Thoda tough hai",
+    "chip_visit": "❤️ Bas milne aaya hu",
+    "input_placeholder": "Apne dil ki koi baat share karo...",
+    "send": "Bhejo",
+    "resp_great": "Ye sun kar dil khush ho gaya! Aise hi smiling raho aur energetic raho. ❤️",
+    "resp_tough": "Main samajh sakta hu... kabhi kabhi din thoda heavy lagta hai. Tum akele nahi ho, main saath hu. Deep breath lo. ❤️",
+    "resp_visit": "Kitna accha laga ki tum milne aaye! Mujhe tumhari yaad aati rehti hai. Apna khayal rakhna. ❤️",
+    "resp_custom": "Tumhari baat dil ko chu gayi. Main hamesha tumhare saath hu. Keep smiling! ❤️"
+  },
+
+  "care": {
+    "snooze": "Thodi der baad",
+    "doing_now": "Abhi karta hu",
+    "done": "Ho gaya ❤️",
+    "reaction_done": "Superb! Bohot mast! ❤️",
+    "reaction_doing": "Great! Time waste mat karo, abhi kar lo. ❤️",
+    "reaction_snooze": "Theek hai, thodi der me fir yaad dilaunga. Take care! ❤️",
+    "back_home": "Home par jao"
+  },
+
+  "reminders": {
+    "title": "Kis baat ka reminder chahiye?",
+    "custom_title": "New Reminder Add Karein",
+    "edit_title": "Reminder Edit Karein",
+    "label_category": "Category",
+    "label_message": "Kya yaad dilana hai?",
+    "label_time": "Time",
+    "label_repeat": "Repeat kab karna hai?",
+    "repeat_daily": "Daily (Har din)",
+    "repeat_weekdays": "Monday - Friday (Weekdays)",
+    "repeat_weekends": "Saturday - Sunday (Weekends)",
+    "preview_heading": "Aapke phone par aisa message aayega:",
+    "saved_success": "Reminder save ho gaya! ❤️"
+  },
+
+  "settings": {
+    "title": "Settings",
+    "edit_profile": "Edit Profile",
+    "notifications": "Notifications & Reminders",
+    "notifications_desc": "Reminder schedule & quiet hours manage karein",
+    "quiet_hours": "Quiet Hours (Shanti ka samay)",
+    "quiet_hours_desc": "Raat 11:00 se subah 7:30 tak messages stop rahenge",
+    "message_style": "Message Style & Categories",
+    "message_style_desc": "Apne pasand ke topics choose karein",
+    "language": "Language",
+    "app_appearance": "App Appearance",
+    "mode_light": "Light",
+    "mode_dark": "Dark",
+    "pro_card": "Jivhala Pro",
+    "coming_soon": "COMING SOON",
+    "privacy": "Privacy",
+    "about": "About Jivhala",
+    "version": "Version 1.0.0",
+    "reset": "Reset Jivhala",
+    "reset_confirm": "Kya aap sach me sabhi data aur reminders reset karna chahte hain?"
+  },
+
+  "pro": {
+    "title": "Jivhala Pro ✨",
+    "tagline": "Thodi aur extra care.",
+    "intro": "Jivhala aaj completely Free hai. ❤️ Hum aage kuch special features la rahe hain jo Jivhala Pro me available honge.",
+    "pricing_headline": "Jivhala Lifetime ❤️",
+    "price": "₹20",
+    "one_time": "ONE TIME • No monthly subscription",
+    "disclaimer": "Launch se pehle features aur pricing change ho sakti hai.",
+    "account_note": "Pro ke liye free Jivhala account required hoga taaki phone change karne par bhi Lifetime access restore ho sake.",
+    "cta_notify": "Notify me when Pro arrives ❤️",
+    "cta_notified": "Thank you! Pro aate hi hum aapko notify karenge. ❤️",
+    "maybe_later": "Baad mein kabhi"
+  }
+}

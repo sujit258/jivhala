@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3EC"/>
+      <stop offset="100%" stop-color="#FCE4D8"/>
+    </linearGradient>
+    <linearGradient id="coralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F28B82"/>
+      <stop offset="100%" stop-color="#E97878"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#E97878" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle decorative ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#F8D8CC" stroke-width="4" stroke-dasharray="12 8"/>
+  
+  <!-- Warm Heart Companion Body -->
+  <g filter="url(#softShadow)">
+    <path d="M256 390 C220 350, 140 285, 140 205 C140 155, 180 120, 230 120 C242 120, 250 125, 256 132 C262 125, 270 120, 282 120 C332 120, 372 155, 372 205 C372 285, 292 350, 256 390 Z" fill="url(#coralGrad)"/>
+  </g>
+
+  <!-- Sweet Eyes & Smile on Heart -->
+  <ellipse cx="225" cy="210" rx="10" ry="14" fill="#FFFFFF"/>
+  <circle cx="228" cy="207" r="4" fill="#292525"/>
+  <ellipse cx="287" cy="210" rx="10" ry="14" fill="#FFFFFF"/>
+  <circle cx="290" cy="207" r="4" fill="#292525"/>
+  
+  <!-- Rosy Cheeks -->
+  <circle cx="205" cy="226" r="12" fill="#FFAAA6" opacity="0.8"/>
+  <circle cx="307" cy="226" r="12" fill="#FFAAA6" opacity="0.8"/>
+
+  <!-- Warm Smile -->
+  <path d="M242 235 Q256 250 270 235" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Tiny golden sparkle -->
+  <path d="M375 140 Q385 140 385 130 Q385 140 395 140 Q385 140 385 150 Q385 140 375 140 Z" fill="#F6BE75"/>
+</svg>

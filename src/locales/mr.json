@@ -1,0 +1,164 @@
+{
+  "app_name": "Jivhala ❤️",
+  "tagline": "छोट्या छोट्या गोष्टींची काळजी.",
+  "subtagline": "Someone who remembers the little things.",
+  "continue": "Continue →",
+  "next": "पुढे →",
+  "save": "Save ❤️",
+  "cancel": "रद्द करा",
+  "later": "नंतर",
+  "maybe_later": "नंतर कधी तरी",
+  "free_reassurance": "Free to use • No account required",
+
+  "splash": {
+    "loading": "Loading...",
+    "tagline": "छोट्या छोट्या गोष्टींची काळजी."
+  },
+
+  "welcome": {
+    "title": "तुमचं स्वागत आहे! ❤️",
+    "subtitle": "तुमच्यासाठी कोणीतरी छोट्या छोट्या गोष्टी लक्षात ठेवावं.",
+    "english_tag": "Someone who remembers the little things.",
+    "cta": "सुरुवात करूया →"
+  },
+
+  "language": {
+    "title": "तुमची भाषा निवडा",
+    "subtitle": "तुमच्याशी तुमच्या भाषेत बोलायला आवडेल!"
+  },
+
+  "avatar": {
+    "title": "तुझा साथीदार कोण असावा?",
+    "subtitle": "तुला कोणत्या स्वभावाची साथ हवी आहे?"
+  },
+
+  "name_step": {
+    "title": "तुला काय म्हणू?",
+    "placeholder": "तुझं नाव टाका (उदा. सुजीत)",
+    "greeting": "छान, {name}! ❤️",
+    "reassurance": "आता मी तुला वेळोवेळी प्रेमाने आठवण करून देईन."
+  },
+
+  "messages_step": {
+    "title": "तुझ्यासाठी काळजीचे मेसेज ❤️",
+    "subtitle": "आम्ही काही काळजीचे मेसेज आधीच सुरू केले आहेत. तुला हवे तसे बदलू शकतोस.",
+    "reassurance": "सगळे काळजीचे मेसेज default ने सुरू आहेत. तुला हवे ते कधीही बदलू शकतोस."
+  },
+
+  "notifications_step": {
+    "title": "मी तुला आठवण करून देऊ? ❤️",
+    "subtitle": "जेवण, पाणी, आराम आणि स्वतःची काळजी यासाठी.",
+    "f1_title": "वेळेवर आठवण",
+    "f1_desc": "दिवसभरात जेवण आणि पाण्याची योग्य आठवण",
+    "f2_title": "तुझं आरोग्य आणि दिवसाची काळजी",
+    "f2_desc": "थकवा न येता छान काम करण्यासाठी हलके ब्रेक",
+    "f3_title": "हलके, प्रेमळ मेसेज",
+    "f3_desc": "कोणताही दबाव नाही, फक्त एक आपुलकीची भावना",
+    "cta": "हो, आठवण करून दे ❤️",
+    "denied_help": "तुम्ही notifications बंद केल्या आहेत. browser settings मध्ये जाऊन allow करा."
+  },
+
+  "install_step": {
+    "title": "Jivhala फोनमध्ये ठेवा ❤️",
+    "subtitle": "तुमचे काळजीचे मेसेज वेळेवर मिळतील.",
+    "tab_android": "Android",
+    "tab_ios": "iPhone",
+    "step1": "Install App दाबा",
+    "step2": "Jivhala तुमच्या फोनवर जोडा",
+    "step3": "लगेच वापरायला सुरुवात करा!",
+    "ios_step1": "Safari मध्ये खाली दिलेले Share बटण दाबा",
+    "ios_step2": "'Add to Home Screen' वर टॅप करा",
+    "ios_step3": "Home Screen वरून Jivhala उघडा",
+    "cta": "Install App",
+    "installed_success": "Jivhala आधीच install झाले आहे! ❤️"
+  },
+
+  "home": {
+    "morning": "शुभ सकाळ",
+    "afternoon": "शुभ दुपार",
+    "evening": "शुभ संध्याकाळ",
+    "night": "शुभ रात्री",
+    "day_wish": "आजचा दिवस छान जाऊ दे. ❤️",
+    "next_card_label": "आजची पुढची आठवण",
+    "timeline_label": "आजचे बाकी मेसेज",
+    "add_reminder": "+ Add reminder",
+    "test_push_button": "📱 Test Push Notification",
+    "install_banner_title": "Jivhala फोनमध्ये ठेवा ❤️",
+    "install_banner_desc": "काळजीचे मेसेज वेळेवर मिळतील."
+  },
+
+  "companion": {
+    "title": "Hi {name}! ❤️",
+    "question": "आज कसा आहेस?",
+    "chip_great": "😊 छान आहे",
+    "chip_tough": "😔 थोडं कठीण आहे",
+    "chip_visit": "❤️ फक्त भेटायला आलो",
+    "input_placeholder": "तुझी काही गोष्ट शेअर कर...",
+    "send": "पाठवा",
+    "resp_great": "हे ऐकून खूप आनंद झाला! तुझा दिवस असाच हसतमुख आणि ऊर्जावान जावो. ❤️",
+    "resp_tough": "मी समजू शकते... कधी कधी दिवस जड जातो. पण तू एकटा नाहीस, मी सोबत आहे. थोडा शांत श्वास घे. ❤️",
+    "resp_visit": "किती छान वाटलं तू भेटायला आलास! मला तुझी नेहमी आठवण येते. स्वतःची काळजी घे ना. ❤️",
+    "resp_custom": "तुझं बोलणं माझ्या मनाला स्पर्शून गेलं. मी नेहमी तुझ्या पाठीशी उभी आहे. हसत राहा! ❤️"
+  },
+
+  "care": {
+    "snooze": "थोड्यावेळाने",
+    "doing_now": "आता करतो",
+    "done": "झालं ❤️",
+    "reaction_done": "छान! खूप मस्त! ❤️",
+    "reaction_doing": "छान! वेळ न दवडता आत्ताच कर. ❤️",
+    "reaction_snooze": "ठीक आहे, काही वेळाने पुन्हा आठवण करेन. काळजी घे! ❤️",
+    "back_home": "Home कडे जा"
+  },
+
+  "reminders": {
+    "title": "कशाची आठवण करून द्यायची?",
+    "custom_title": "नवीन आठवण जोडा",
+    "edit_title": "आठवण बदला",
+    "label_category": "प्रकार",
+    "label_message": "काय आठवण करून द्यायची?",
+    "label_time": "वेळ",
+    "label_repeat": "कधी पुन्हा करायचे?",
+    "repeat_daily": "दररोज",
+    "repeat_weekdays": "सोम - शुक्र (Weekdays)",
+    "repeat_weekends": "शनि - रवि (Weekends)",
+    "preview_heading": "तुझ्या फोनवर असा मेसेज दिसेल:",
+    "saved_success": "आठवण सेव्ह झाली! ❤️"
+  },
+
+  "settings": {
+    "title": "Settings",
+    "edit_profile": "Edit Profile",
+    "notifications": "Notifications & Reminders",
+    "notifications_desc": "Manage reminder schedule & quiet hours",
+    "quiet_hours": "Quiet Hours (शांततेची वेळ)",
+    "quiet_hours_desc": "रात्री ११:०० ते सकाळी ७:३० पर्यंत मेसेज थांबतील",
+    "message_style": "Message Style & Categories",
+    "message_style_desc": "तुझ्या आवडीचे विषय निवडा",
+    "language": "Language / भाषा",
+    "app_appearance": "App Appearance",
+    "mode_light": "Light",
+    "mode_dark": "Dark",
+    "pro_card": "Jivhala Pro",
+    "coming_soon": "COMING SOON",
+    "privacy": "Privacy",
+    "about": "About Jivhala",
+    "version": "Version 1.0.0",
+    "reset": "Reset Jivhala",
+    "reset_confirm": "तुम्हाला खरोखर सर्व माहिती आणि आठवणी reset करायच्या आहेत का?"
+  },
+
+  "pro": {
+    "title": "Jivhala Pro ✨",
+    "tagline": "अजून थोडी जास्त काळजी.",
+    "intro": "Jivhala आज पूर्णपणे Free आहे. ❤️ आम्ही पुढे काही खास features आणत आहोत, जे Jivhala Pro मध्ये उपलब्ध होतील.",
+    "pricing_headline": "Jivhala Lifetime ❤️",
+    "price": "₹20",
+    "one_time": "ONE TIME • No monthly subscription",
+    "disclaimer": "Final Pro features and pricing may change before launch.",
+    "account_note": "Pro साठी free Jivhala account आवश्यक असेल, त्यामुळे phone बदलला तरी तुमचा Lifetime access आणि preferences restore करता येतील.",
+    "cta_notify": "Notify me when Pro arrives ❤️",
+    "cta_notified": "धन्यवाद! Pro उपलब्ध झाल्यावर आम्ही तुला कळवू. ❤️",
+    "maybe_later": "नंतर कधी तरी"
+  }
+}

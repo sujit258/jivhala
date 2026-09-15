@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFF9F5;
+  --foreground: #292525;
+  --card-bg: #FFFFFF;
+  --card-border: #F3E5DC;
+  --jivhala-coral: #E97878;
+  --jivhala-coral-dark: #D45D5D;
+  --jivhala-peach: #F8D8CC;
+  --jivhala-peach-light: #FDF2EC;
+  --jivhala-muted: #817775;
+  --jivhala-sage: #88A987;
+}
+
+.dark {
+  --background: #1B1716;
+  --foreground: #F5EFEB;
+  --card-bg: #272120;
+  --card-border: #3A3230;
+  --jivhala-coral: #E97878;
+  --jivhala-coral-dark: #D45D5D;
+  --jivhala-peach: #3E2F2B;
+  --jivhala-peach-light: #2D2320;
+  --jivhala-muted: #B2A6A3;
+  --jivhala-sage: #759B74;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-jakarta), var(--font-devanagari), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--jivhala-peach);
+  border-radius: 9999px;
+}
+
+/* Animations for Companion Avatars */
+@keyframes gentleBreathe {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-2.5px) scale(1.012);
+  }
+}
+
+@keyframes immersivePresence {
+  0%, 100% {
+    transform: scale(1) translateY(0px) rotate(0deg);
+  }
+  35% {
+    transform: scale(1.018) translateY(-4px) rotate(-0.5deg);
+  }
+  70% {
+    transform: scale(1.012) translateY(-2px) rotate(0.4deg);
+  }
+}
+
+@keyframes eyeBlink {
+  0%, 94%, 98%, 100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.08);
+  }
+}
+
+.avatar-gentle-breathe {
+  animation: gentleBreathe 4.5s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.avatar-immersive-presence {
+  animation: immersivePresence 6s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.avatar-eye-blink {
+  animation: eyeBlink 5.5s infinite;
+  transform-origin: 200px 195px;
+}
+
+/* Accessibility: Disable motion when preferred */
+@media (prefers-reduced-motion: reduce) {
+  .avatar-gentle-breathe,
+  .avatar-immersive-presence,
+  .avatar-eye-blink {
+    animation: none !important;
+  }
+}
+
+/* Mobile viewport container utilities */
+.mobile-frame {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  position: relative;
+  box-shadow: 0 0 50px -12px rgba(41, 37, 37, 0.08);
+}

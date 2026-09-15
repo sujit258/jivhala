@@ -1,0 +1,164 @@
+{
+  "app_name": "Jivhala ❤️",
+  "tagline": "Someone who remembers the little things.",
+  "subtagline": "छोट्या छोट्या गोष्टींची काळजी.",
+  "continue": "Continue →",
+  "next": "Next →",
+  "save": "Save ❤️",
+  "cancel": "Cancel",
+  "later": "Later",
+  "maybe_later": "Maybe later",
+  "free_reassurance": "Free to use • No account required",
+
+  "splash": {
+    "loading": "Loading...",
+    "tagline": "Someone who remembers the little things."
+  },
+
+  "welcome": {
+    "title": "Welcome! ❤️",
+    "subtitle": "Someone who remembers the little things for you.",
+    "english_tag": "Someone who remembers the little things.",
+    "cta": "Let's Begin →"
+  },
+
+  "language": {
+    "title": "Choose your language",
+    "subtitle": "We'd love to speak with you in your preferred tongue!"
+  },
+
+  "avatar": {
+    "title": "Who should be your companion?",
+    "subtitle": "What kind of personality brings you comfort?"
+  },
+
+  "name_step": {
+    "title": "What should I call you?",
+    "placeholder": "Enter your name (e.g. Sujeet)",
+    "greeting": "Wonderful, {name}! ❤️",
+    "reassurance": "Now I will gently remind you from time to time."
+  },
+
+  "messages_step": {
+    "title": "Caring Reminders for You ❤️",
+    "subtitle": "We've started with some essential care messages. You can customize them anytime.",
+    "reassurance": "All caring reminders are enabled by default."
+  },
+
+  "notifications_step": {
+    "title": "May I remind you? ❤️",
+    "subtitle": "For meals, hydration, rest, and everyday well-being.",
+    "f1_title": "Timely Reminders",
+    "f1_desc": "Gentle nudges for water, food, and pauses throughout the day",
+    "f2_title": "Daily Health & Care",
+    "f2_desc": "Breathing space so you never burn out",
+    "f3_title": "Warm & Gentle Nudges",
+    "f3_desc": "Zero pressure, just a feeling of genuine warmth",
+    "cta": "Yes, please remind me ❤️",
+    "denied_help": "Notifications are currently blocked. Please enable them in your browser settings."
+  },
+
+  "install_step": {
+    "title": "Keep Jivhala on Your Phone ❤️",
+    "subtitle": "Receive your caring messages reliably on time.",
+    "tab_android": "Android",
+    "tab_ios": "iPhone",
+    "step1": "Tap 'Install App'",
+    "step2": "Add Jivhala to your home screen",
+    "step3": "Start enjoying your caring companion!",
+    "ios_step1": "Tap the Share button at the bottom of Safari",
+    "ios_step2": "Tap 'Add to Home Screen'",
+    "ios_step3": "Open Jivhala right from your Home Screen",
+    "cta": "Install App",
+    "installed_success": "Jivhala is already installed! ❤️"
+  },
+
+  "home": {
+    "morning": "Good Morning",
+    "afternoon": "Good Afternoon",
+    "evening": "Good Evening",
+    "night": "Good Night",
+    "day_wish": "Wishing you a peaceful and wonderful day. ❤️",
+    "next_card_label": "Next Caring Reminder",
+    "timeline_label": "Today's Caring Schedule",
+    "add_reminder": "+ Add reminder",
+    "test_push_button": "📱 Test Push Notification",
+    "install_banner_title": "Keep Jivhala on your phone ❤️",
+    "install_banner_desc": "Get caring reminders right on time."
+  },
+
+  "companion": {
+    "title": "Hi {name}! ❤️",
+    "question": "How are you feeling today?",
+    "chip_great": "😊 Doing great",
+    "chip_tough": "😔 A bit tough",
+    "chip_visit": "❤️ Just dropped by to see you",
+    "input_placeholder": "Share what's on your mind...",
+    "send": "Send",
+    "resp_great": "That brings so much joy to hear! May your day stay bright and full of positive energy. ❤️",
+    "resp_tough": "I understand... some days can feel overwhelming. Remember you are never alone; I am here with you. Take a slow, peaceful breath. ❤️",
+    "resp_visit": "I am so happy you came to visit! I always think of you. Please remember to take care of yourself today. ❤️",
+    "resp_custom": "Your words touched my heart. I will always be right here supporting you. Keep that warm smile! ❤️"
+  },
+
+  "care": {
+    "snooze": "In a little bit",
+    "doing_now": "Doing it now",
+    "done": "Done ❤️",
+    "reaction_done": "Wonderful! So proud of you! ❤️",
+    "reaction_doing": "Awesome! Go ahead and take care of it now. ❤️",
+    "reaction_snooze": "No worries, I'll remind you in a bit. Take care! ❤️",
+    "back_home": "Back to Home"
+  },
+
+  "reminders": {
+    "title": "What should I remind you about?",
+    "custom_title": "Add New Reminder",
+    "edit_title": "Edit Reminder",
+    "label_category": "Category",
+    "label_message": "Reminder Message",
+    "label_time": "Time",
+    "label_repeat": "Repeat",
+    "repeat_daily": "Every day",
+    "repeat_weekdays": "Monday - Friday (Weekdays)",
+    "repeat_weekends": "Saturday - Sunday (Weekends)",
+    "preview_heading": "How it looks on your phone:",
+    "saved_success": "Reminder saved! ❤️"
+  },
+
+  "settings": {
+    "title": "Settings",
+    "edit_profile": "Edit Profile",
+    "notifications": "Notifications & Reminders",
+    "notifications_desc": "Manage reminder schedule & quiet hours",
+    "quiet_hours": "Quiet Hours",
+    "quiet_hours_desc": "Notifications pause from 11:00 PM to 7:30 AM",
+    "message_style": "Message Style & Categories",
+    "message_style_desc": "Customize your preferred topics",
+    "language": "Language",
+    "app_appearance": "App Appearance",
+    "mode_light": "Light",
+    "mode_dark": "Dark",
+    "pro_card": "Jivhala Pro",
+    "coming_soon": "COMING SOON",
+    "privacy": "Privacy",
+    "about": "About Jivhala",
+    "version": "Version 1.0.0",
+    "reset": "Reset Jivhala",
+    "reset_confirm": "Are you sure you want to reset all preferences and reminders?"
+  },
+
+  "pro": {
+    "title": "Jivhala Pro ✨",
+    "tagline": "A little extra care.",
+    "intro": "Jivhala is completely Free today. ❤️ We are building special additions that will arrive with Jivhala Pro.",
+    "pricing_headline": "Jivhala Lifetime ❤️",
+    "price": "₹20",
+    "one_time": "ONE TIME • No monthly subscription",
+    "disclaimer": "Final Pro features and pricing may change before launch.",
+    "account_note": "Pro will require a free Jivhala account so your Lifetime access and preferences can be restored if you change phones.",
+    "cta_notify": "Notify me when Pro arrives ❤️",
+    "cta_notified": "Thank you! We will notify you when Pro arrives. ❤️",
+    "maybe_later": "Maybe later"
+  }
+}

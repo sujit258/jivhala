@@ -1,0 +1,164 @@
+{
+  "app_name": "Jivhala ❤️",
+  "tagline": "छोटी छोटी बातों की परवाह.",
+  "subtagline": "Someone who remembers the little things.",
+  "continue": "Continue →",
+  "next": "आगे बढ़ें →",
+  "save": "Save ❤️",
+  "cancel": "रद्द करें",
+  "later": "बाद में",
+  "maybe_later": "बाद में कभी",
+  "free_reassurance": "Free to use • No account required",
+
+  "splash": {
+    "loading": "Loading...",
+    "tagline": "छोटी छोटी बातों की परवाह."
+  },
+
+  "welcome": {
+    "title": "आपका स्वागत है! ❤️",
+    "subtitle": "आपके लिए कोई छोटी-छोटी बातें याद रखे.",
+    "english_tag": "Someone who remembers the little things.",
+    "cta": "शुरुआत करें →"
+  },
+
+  "language": {
+    "title": "अपनी भाषा चुनें",
+    "subtitle": "आपसे आपकी पसंदीदा भाषा में बात करना अच्छा लगेगा!"
+  },
+
+  "avatar": {
+    "title": "आपका साथी कौन हो?",
+    "subtitle": "आपको किस स्वभाव का साथ चाहिए?"
+  },
+
+  "name_step": {
+    "title": "आपको क्या कहकर बुलाऊं?",
+    "placeholder": "अपना नाम लिखें (जैसे सुजीत)",
+    "greeting": "बहुत बढ़िया, {name}! ❤️",
+    "reassurance": "अब मैं आपको समय-समय पर प्यार से याद दिलाऊंगा."
+  },
+
+  "messages_step": {
+    "title": "आपके लिए परवाह भरे संदेश ❤️",
+    "subtitle": "हमने कुछ जरूरी रिमाइंडर पहले से चालू रखे हैं. आप जब चाहें बदल सकते हैं.",
+    "reassurance": "सभी रिमाइंडर डिफ़ॉल्ट रूप से चालू हैं."
+  },
+
+  "notifications_step": {
+    "title": "क्या मैं आपको याद दिलाऊं? ❤️",
+    "subtitle": "खाना, पानी, आराम और खुद की देखभाल के लिए.",
+    "f1_title": "समय पर याद दिलाना",
+    "f1_desc": "दिन भर में पानी और भोजन का सही समय पर ध्यान",
+    "f2_title": "आपकी सेहत और दिन की परवाह",
+    "f2_desc": "बिना थके बेहतर काम करने के लिए छोटे ब्रेक",
+    "f3_title": "प्यारे और आत्मीय संदेश",
+    "f3_desc": "कोई दबाव नहीं, बस एक अपनेपन का एहसास",
+    "cta": "हाँ, याद दिलाना ❤️",
+    "denied_help": "आपने नोटिफिकेशन बंद किए हैं. ब्राउज़र सेटिंग्स में जाकर चालू करें."
+  },
+
+  "install_step": {
+    "title": "Jivhala फोन में रखें ❤️",
+    "subtitle": "परवाह भरे संदेश समय पर मिलेंगे.",
+    "tab_android": "Android",
+    "tab_ios": "iPhone",
+    "step1": "Install App दबाएं",
+    "step2": "Jivhala को अपनी होम स्क्रीन पर जोड़ें",
+    "step3": "तुरंत इस्तेमाल करना शुरू करें!",
+    "ios_step1": "Safari में नीचे दिया गया Share बटन दबाएं",
+    "ios_step2": "'Add to Home Screen' चुनें",
+    "ios_step3": "होम स्क्रीन से Jivhala खोलें",
+    "cta": "Install App",
+    "installed_success": "Jivhala पहले से इंस्टॉल है! ❤️"
+  },
+
+  "home": {
+    "morning": "शुभ प्रभात",
+    "afternoon": "शुभ दोपहर",
+    "evening": "शुभ संध्या",
+    "night": "शुभ रात्रि",
+    "day_wish": "आज का दिन बहुत मंगलमय हो. ❤️",
+    "next_card_label": "आज का अगला रिमाइंडर",
+    "timeline_label": "दिन के बाकी संदेश",
+    "add_reminder": "+ Add reminder",
+    "test_push_button": "📱 Test Push Notification",
+    "install_banner_title": "Jivhala फोन में रखें ❤️",
+    "install_banner_desc": "परवाह भरे संदेश समय पर मिलेंगे."
+  },
+
+  "companion": {
+    "title": "Hi {name}! ❤️",
+    "question": "आज कैसा महसूस कर रहे हैं?",
+    "chip_great": "😊 बहुत अच्छा",
+    "chip_tough": "😔 थोड़ा मुश्किल है",
+    "chip_visit": "❤️ बस मिलने आया हूं",
+    "input_placeholder": "अपने दिल की कोई बात साझा करें...",
+    "send": "भेजें",
+    "resp_great": "यह जानकर बहुत खुशी हुई! आपका दिन ऐसे ही मुस्कुराते हुए बीते. ❤️",
+    "resp_tough": "मैं समझ सकती हूं... कभी-कभी दिन भारी लगता है. पर आप अकेले नहीं हैं, मैं साथ हूं. गहरी सांस लें. ❤️",
+    "resp_visit": "कितना अच्छा लगा कि आप मिलने आए! मुझे आपकी याद आती रहती है. अपना ख्याल रखें. ❤️",
+    "resp_custom": "आपकी बात मेरे दिल को छू गई. मैं हमेशा आपके साथ हूं. मुस्कुराते रहें! ❤️"
+  },
+
+  "care": {
+    "snooze": "थोड़ी देर बाद",
+    "doing_now": "अभी करता हूँ",
+    "done": "हो गया ❤️",
+    "reaction_done": "शाबाश! बहुत बढ़िया! ❤️",
+    "reaction_doing": "बहुत अच्छे! तुरंत कर लो. ❤️",
+    "reaction_snooze": "ठीक है, थोड़ी देर बाद याद दिलाऊंगा. ख्याल रखना! ❤️",
+    "back_home": "Home पर जाएं"
+  },
+
+  "reminders": {
+    "title": "किस बात की याद दिलानी है?",
+    "custom_title": "नया रिमाइंडर जोड़ें",
+    "edit_title": "रिमाइंडर बदलें",
+    "label_category": "प्रकार",
+    "label_message": "क्या याद दिलाना है?",
+    "label_time": "समय",
+    "label_repeat": "कब दोहराना है?",
+    "repeat_daily": "प्रतिदिन",
+    "repeat_weekdays": "सोमवार - शुक्रवार (Weekdays)",
+    "repeat_weekends": "शनिवार - रविवार (Weekends)",
+    "preview_heading": "आपके फोन पर ऐसा संदेश दिखेगा:",
+    "saved_success": "रिमाइंडर सहेज लिया गया! ❤️"
+  },
+
+  "settings": {
+    "title": "Settings",
+    "edit_profile": "Edit Profile",
+    "notifications": "Notifications & Reminders",
+    "notifications_desc": "रिमाइंडर शेड्यूल और शांत समय प्रबंधित करें",
+    "quiet_hours": "Quiet Hours (शांत समय)",
+    "quiet_hours_desc": "रात 11:00 से सुबह 7:30 तक नोटिफिकेशन नहीं आएंगे",
+    "message_style": "Message Style & Categories",
+    "message_style_desc": "अपने पसंदीदा विषय चुनें",
+    "language": "Language / भाषा",
+    "app_appearance": "App Appearance",
+    "mode_light": "Light",
+    "mode_dark": "Dark",
+    "pro_card": "Jivhala Pro",
+    "coming_soon": "COMING SOON",
+    "privacy": "Privacy",
+    "about": "About Jivhala",
+    "version": "Version 1.0.0",
+    "reset": "Reset Jivhala",
+    "reset_confirm": "क्या आप सचमुच सभी डेटा और रिमाइंडर रीसेट करना चाहते हैं?"
+  },
+
+  "pro": {
+    "title": "Jivhala Pro ✨",
+    "tagline": "थोड़ी और ज्यादा परवाह.",
+    "intro": "Jivhala आज पूरी तरह Free है. ❤️ हम आगे कुछ खास फीचर्स ला रहे हैं जो Jivhala Pro में उपलब्ध होंगे.",
+    "pricing_headline": "Jivhala Lifetime ❤️",
+    "price": "₹20",
+    "one_time": "ONE TIME • No monthly subscription",
+    "disclaimer": "लॉन्च से पहले फीचर्स और कीमत में बदलाव हो सकता है.",
+    "account_note": "Pro के लिए एक मुफ़्त Jivhala खाते की आवश्यकता होगी, ताकि फोन बदलने पर भी लाइफटाइम एक्सेस बना रहे.",
+    "cta_notify": "Notify me when Pro arrives ❤️",
+    "cta_notified": "धन्यवाद! Pro उपलब्ध होते ही हम आपको सूचित करेंगे. ❤️",
+    "maybe_later": "बाद में कभी"
+  }
+}
